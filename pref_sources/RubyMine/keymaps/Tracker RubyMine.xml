@@ -1,0 +1,62 @@
+<keymap version="1" name="Tracker RubyMine" parent="Pivotal RubyMine">
+  <action id="Console.Oracle.DbmsOutput" />
+  <action id="Console.TableResult.NavigateAction">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="Database.OpenDbStorageAction">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="DomCollectionControl.Edit">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="DomElementsTreeView.GotoDomElementDeclarationAction">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="EditBreakpoint" />
+  <action id="EditSource">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="meta BACK_SPACE" />
+    <keyboard-shortcut first-keystroke="meta Y" />
+  </action>
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="alt UP" />
+    <keyboard-shortcut first-keystroke="control W" />
+  </action>
+  <action id="EditorTextEnd">
+    <keyboard-shortcut first-keystroke="meta END" />
+    <keyboard-shortcut first-keystroke="meta DOWN" />
+  </action>
+  <action id="EditorTextStart">
+    <keyboard-shortcut first-keystroke="meta HOME" />
+    <keyboard-shortcut first-keystroke="meta UP" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="shift meta O" />
+    <keyboard-shortcut first-keystroke="shift meta N" />
+  </action>
+  <action id="Jdbc.OpenTableEditor">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="NewScratchFile" />
+  <action id="QuickImplementations">
+    <keyboard-shortcut first-keystroke="alt SPACE" />
+  </action>
+  <action id="RemoteHostView.EditSource">
+    <keyboard-shortcut first-keystroke="F4" />
+  </action>
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="control R" />
+    <keyboard-shortcut first-keystroke="meta F8" />
+  </action>
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="shift control R" />
+    <keyboard-shortcut first-keystroke="shift meta F8" />
+  </action>
+  <action id="ShowNavBar">
+    <keyboard-shortcut first-keystroke="alt HOME" />
+  </action>
+  <action id="ToggleLineBreakpoint" />
+  <action id="ViewBreakpoints" />
+</keymap>

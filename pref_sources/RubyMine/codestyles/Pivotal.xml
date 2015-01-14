@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <code_scheme name="Pivotal">
   <option name="OTHER_INDENT_OPTIONS">
     <value>
@@ -71,9 +70,5 @@
   </codeStyleSettings>
   <codeStyleSettings language="ruby">
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
-    <indentOptions>
-      <option name="CONTINUATION_INDENT_SIZE" value="2" />
-    </indentOptions>
   </codeStyleSettings>
 </code_scheme>
-

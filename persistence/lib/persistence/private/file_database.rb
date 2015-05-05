@@ -84,8 +84,14 @@ module Persistence
 
       def convert_absolute_paths_to_relative_paths(absolute_paths)
         absolute_paths.map do |file_path|
-          file_path.sub(absolute_path_in_database(separator), "")
+          chop_off_file_database_root(file_path)
         end
+      end
+
+      def chop_off_file_database_root(file_path)
+        file_database_root = absolute_path_in_database(separator)
+        file_database_root_regex = Regexp.new(file_database_root, Regexp::IGNORECASE)
+        file_path.sub(file_database_root_regex, "")
       end
 
       def separator

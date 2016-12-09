@@ -19,10 +19,12 @@ repo_config_options = {}
 logging_options = {log_level: :info}
 
 OptionParser.new do |opts|
+  opts.banner = "Usage: ide_prefs [options] [install,uninstall]"
+
   opts.on(
       "--ide=IDE",
-      ["webstorm", "intellij", "intellijcommunity", "rubymine", "appcode", "androidstudio", "pycharm"],
-      "webstorm, intellij, intellijcommunity, rubymine, appcode, androidstudio", "pycharm"
+      ["webstorm", "intellij", "intellijcommunity", "rubymine", "appcode", "androidstudio", "clion", "pycharm"],
+      "webstorm, intellij, intellijcommunity, rubymine, appcode, androidstudio", "clion", "pycharm"
   ) do |ide|
     repo_config_options[:user_prefs_repo_location] = Module.const_get("Cli::Ide::#{ide.capitalize}UserPrefDir").new.path
     repo_config_options[:ide_name] = ide

@@ -1,14 +1,14 @@
-require "cli/ide/jet_brains_ide_user_pref_dir"
+require 'cli/ide/jet_brains_ide_user_pref_dir'
 
 module Cli
   module Ide
-    class WebstormUserPrefDir < JetBrainsIdeUserPrefDir
+    class ClionUserPrefDir < JetBrainsIdeUserPrefDir
       def ide_pref_dir_name_without_version
-        "WebStorm"
+        'Clion'
       end
 
       def default_ide_pref_dir_version
-        "11"
+        '2016.2'
       end
     end
   end

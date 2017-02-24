@@ -1,0 +1,14 @@
+<toolSet name="External Tools">
+  <tool name="elm format and make" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="bash" />
+      <option name="PARAMETERS" value="-c &quot;VERBOSE=false $ProjectFileDir$/.idea/elm_formatter_compiler.rb&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+    <filter>
+      <option name="NAME" value="file line col relative to current dir" />
+      <option name="DESCRIPTION" value="can't get column matching to work..." />
+      <option name="REGEXP" value="$FILE_PATH$:$LINE$:$COLUMN$" />
+    </filter>
+  </tool>
+</toolSet>

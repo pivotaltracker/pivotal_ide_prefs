@@ -20,4 +20,27 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="clv" value="console.log(&quot;$A$: &quot;, $A$);$END$" description="Console.log variable" toReformat="false" toShortenFQNames="true">
+    <variable name="A" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="thbc" value="toHaveBeenCalled()" description=".toHaveBeenCalled()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="thbcw" value="toHaveBeenCalledWith($var$);" description=".toHaveBeenCalledWith(...)" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="comp" value="import React from 'react';&#10;import PureRenderMixin from 'react-addons-pure-render-mixin';&#10;&#10;const $ClassName$ = React.createClass({&#10;  mixins: [PureRenderMixin],&#10;&#10;  propTypes: {&#10;  },&#10;&#10;  render: function() {&#10;    return (&#10;      $END$&#10;    );&#10;  },&#10;});&#10;&#10;export default $ClassName$;&#10;" description="Create a new React Component" toReformat="false" toShortenFQNames="true">
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
